@@ -1,0 +1,56 @@
+/* Base styles */
+.tabs {
+  display: flex;
+  width: 100%;
+  height: inherit;
+}
+
+/* Horizontal layout */
+.tabs--horizontal {
+  flex-direction: column;
+}
+
+.tabs--horizontal .tab-list {
+  display: flex;
+  border-bottom: 1px solid #ddd;
+}
+
+.tabs--horizontal .tab-list > * {
+  margin-right: 16px;
+}
+
+/* Vertical layout */
+.tabs--vertical {
+  flex-direction: row;
+}
+
+.tabs--vertical .tab-list {
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #ddd;
+}
+
+.tabs--vertical .tab-list > * {
+  margin-bottom: 8px;
+}
+
+/* Common Tab styles */
+.tab-list {
+  padding: 8px;
+}
+
+.tab-panel {
+  padding: 16px;
+  flex-grow: 1;
+}
+
+/* Optional active tab styles */
+.tab-list .active {
+  font-weight: bold;
+  border-bottom: 2px solid blue;
+}
+
+.tabs--vertical .tab-list .active {
+  border-bottom: none;
+  border-right: 2px solid blue;
+}
