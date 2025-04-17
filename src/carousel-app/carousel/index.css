@@ -1,0 +1,29 @@
+.carousel-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.image_wrapper {
+  width: 100px;
+  height: 100px;
+}
+
+.btn_wrapper {
+  display: grid;
+  grid-row: auto;
+  gap: 10px;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  padding: 5px;
+  text-align: center;
+  font-family: revert-layer;
+}
