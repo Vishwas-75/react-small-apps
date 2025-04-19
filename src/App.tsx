@@ -3,6 +3,7 @@ import { Tabs } from "./tabs";
 import { Carousel } from "./carousel-app";
 import { Suspense } from "react";
 import { Grid } from "./grid-app";
+import { TodoList } from "./context-app";
 
 const tabList = [
   {
@@ -14,6 +15,11 @@ const tabList = [
     key: "Grid-App",
     titel: "Grid",
     Component: Grid,
+  },
+  {
+    key: "Todo-Context-App",
+    titel: "Todo-Context",
+    Component: TodoList,
   },
 ];
 

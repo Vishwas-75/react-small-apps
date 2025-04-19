@@ -21,8 +21,8 @@ function Field() {
   };
   return (
     <div className="todo_field-wrapper">
-      <input type="text" value={todoItem} onChange={handleChange} />
-      <button onClick={handleAdd}>Add</button>
+      <input type="text" value={todoItem} onChange={handleChange} className="todo_field-input" />
+      <button onClick={handleAdd} className="todo_field-button">Add</button>
     </div>
   );
 }

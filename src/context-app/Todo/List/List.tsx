@@ -31,16 +31,20 @@ function List() {
       setTaskItem("");
     }
   };
+
+  console.log(todoList)
   return (
     <div>
       {todoList.map(({ id, description }) => (
         <div key={id} className="todo_list_item-wrapper">
+          <div className="todo_list-item">
           {editId === id ? (
-            <input value={taskItem} onChange={handleChange} />
+            <input type="text" value={taskItem} onChange={handleChange} />
           ) : (
             <h6>{description}</h6>
           )}
-          <div>
+          </div>
+          <div className="todo_list-action">
             {editId === id ? (
               <button onClick={handleUpdate}>Update</button>
             ) : (

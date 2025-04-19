@@ -3,6 +3,7 @@ import { initialState, TaskAction } from "../providers";
 
 const todoReducer = (state = initialState, action: TaskAction) => {
   const { type, payload } = action;
+  console.log(type, payload)
   switch (type) {
     case ACTION_TYPE.ADD_TASK:
       return { ...state, todoList: [...state.todoList, payload] };

@@ -8,6 +8,7 @@ const ACTION_TYPE = {
 };
 
 const addTask = (payload: TodoItem) => {
+  console.log(payload)
   return { type: ACTION_TYPE.ADD_TASK, payload: payload };
 };
 

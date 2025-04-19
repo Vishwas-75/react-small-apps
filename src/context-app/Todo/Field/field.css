@@ -1,5 +1,13 @@
-.todo_field-wrapper{
-     display: flex;
-     flex-direction: row;
-     gap: 4px;
+.todo_field-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.todo_field-input {
+  flex: 2.3;
+}
+.todo_field-button {
+  flex: 1;
 }

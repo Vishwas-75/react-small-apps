@@ -1,12 +1,15 @@
+import {TodoProvider} from "../context/providers";
 import { Field } from "./Field";
 import { List } from "./List";
-import "./todo.css"
+import "./todo.css";
 
 function Todo() {
   return (
     <div className="todo-Wrapper">
-      <Field />
-      <List />
+      <TodoProvider>
+        <Field />
+        <List />
+      </TodoProvider>
     </div>
   );
 }
