@@ -1,0 +1,18 @@
+.todo_list_item-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  height: 40px;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+
+.todo_list-item {
+  display: flex;
+  flex: 2;
+}
+.todo_list-action {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+}
